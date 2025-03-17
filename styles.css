@@ -1,0 +1,60 @@
+/* Color Palette */
+:root {
+    --primary-color: #F28705;
+    --dark-shade: #C96C04;
+    --light-shade: #FFA63F;
+    --background-light: #FFF8F1;
+    --text-color: #333;
+    --shadow-light: rgba(242, 135, 5, 0.2);
+    --shadow-dark: rgba(201, 108, 4, 0.5);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.6;
+    background: var(--background-light);
+    color: var(--text-color);
+}
+
+/* Header */
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Section Headings */
+h2 {
+    color: var(--dark-shade);
+    margin-top: 20px;
+}
+
+/* Content Box */
+p {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-light);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        padding: 12px;
+    }
+}
